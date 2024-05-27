@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.auroraos.Notes
+Exec=/usr/bin/ru.auroraos.Notes
+Name=Notes
+Name[ru]=Шаблон
+
+[X-Application]
+Permissions=
+OrganizationName=ru.auroraos
+ApplicationName=Notes
+ExecDBus=/usr/bin/ru.auroraos.Notes
