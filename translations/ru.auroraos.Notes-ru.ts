@@ -42,12 +42,12 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="11"/>
+        <location filename="../qml/pages/MainPage.qml" line="14"/>
         <source>Notes</source>
         <translation type="unfinished">Шаблон</translation>
     </message>
     <message>
-        <location filename="../qml/pages/MainPage.qml" line="25"/>
+        <location filename="../qml/pages/MainPage.qml" line="28"/>
         <source>My Notes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -55,32 +55,32 @@
 <context>
     <name>NewNotePage</name>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="10"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="13"/>
         <source>Add New Note</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="25"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="28"/>
         <source>Title</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="33"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="36"/>
         <source>Enter note title</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="37"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="40"/>
         <source>Description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="46"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="49"/>
         <source>Enter note description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="58"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="61"/>
         <source>Save Note</source>
         <translation type="unfinished"></translation>
     </message>

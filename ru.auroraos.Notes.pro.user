@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.15.2, 2024-05-27T22:57:54. -->
+<!-- Written by QtCreator 4.15.2, 2024-06-28T18:05:34. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -407,7 +407,7 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="bool" key="MerRunConfiguration.DebugBypassOpenSslArmCapEnabled">true</value>
     <value type="QString" key="MerRunConfiguration.QmlLiveBenchWorkspace">C:/AuroraWork/Notes</value>
-    <value type="bool" key="MerRunConfiguration.QmlLiveEnabled">false</value>
+    <value type="bool" key="MerRunConfiguration.QmlLiveEnabled">true</value>
     <value type="int" key="MerRunConfiguration.QmlLiveIpcPort">-1</value>
     <value type="int" key="MerRunConfiguration.QmlLiveOptions">3</value>
     <value type="QString" key="MerRunConfiguration.QmlLiveTargetWorkspace"></value>

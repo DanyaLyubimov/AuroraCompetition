@@ -21,3 +21,5 @@ CONFIG += auroraapp_i18n
 TRANSLATIONS += \
     translations/ru.auroraos.Notes.ts \
     translations/ru.auroraos.Notes-ru.ts \
+
+QT += sql

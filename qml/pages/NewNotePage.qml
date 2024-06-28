@@ -1,9 +1,12 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtQuick.LocalStorage 2.0
 
 Page {
     objectName: "newNotePage"
     allowedOrientations: Orientation.All
+
+    signal noteAdded(string title, string description)
 
     PageHeader {
         objectName: "pageHeader"
@@ -64,10 +67,19 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    console.log("Title: " + titleField.text)
-                    console.log("Description: " + descriptionField.text)
+                    insertNote(titleField.text, descriptionField.text);
+                    noteAdded(titleField.text, descriptionField.text);
+                    pageStack.pop();
                 }
             }
         }
+    }
+
+    function insertNote(title, description) {
+    var db = LocalStorage.openDatabaseSync("notesDB", "1.0", "NotesDatabase", 1000000)
+    db.transaction(function (tx) {
+     tx.executeSql("INSERT INTO notes (title, description)
+     VALUES(?,?);", [title, description]);
+    });
     }
 }
