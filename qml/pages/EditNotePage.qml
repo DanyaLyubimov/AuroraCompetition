@@ -3,14 +3,17 @@ import Sailfish.Silica 1.0
 import QtQuick.LocalStorage 2.0
 
 Page {
-    objectName: "newNotePage"
+    objectName: "editNotePage"
     allowedOrientations: Orientation.All
 
-    signal noteAdded(string title, string description)
+    signal noteUpdated()
+
+    property string noteTitle: ""
+    property string noteDescription: ""
 
     PageHeader {
         objectName: "pageHeader"
-        title: qsTr("Add New Note")
+        title: qsTr("Edit Note")
     }
 
     Column {
@@ -31,17 +34,9 @@ Page {
         }
 
         TextField {
-            onEnableSoftwareInputPanelChanged:  { console.log("sdasdads")
-                if (InputPanel.visible) {
-                                                     // Клавиатура открыта, можно выполнить какие-то действия,
-                                                     // например, сместить элементы вниз
-                                                     textInput.y = 50; // Пример: смещаем элемент вниз на 50 единиц
-                                                 } else {
-                                                     // Клавиатура закрыта, можно вернуть элементы на исходное место
-                                                     textInput.y = parent.height / 2 - textInput.height / 2;
-                                                 }}
             id: titleField
             width: parent.width
+            text: noteTitle
             placeholderText: qsTr("Enter note title")
         }
 
@@ -55,6 +50,7 @@ Page {
             id: descriptionField
             width: parent.width
             height: parent.height * 0.5
+            text: noteDescription
             placeholderText: qsTr("Enter note description")
         }
 
@@ -76,19 +72,23 @@ Page {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    insertNote(titleField.text, descriptionField.text);
-                    noteAdded(titleField.text, descriptionField.text);
+                    updateNote(titleField.text, descriptionField.text);
+                    noteUpdated();
                     pageStack.pop();
                 }
             }
         }
     }
 
-    function insertNote(title, description) {
-    var db = LocalStorage.openDatabaseSync("notesDB", "1.0", "NotesDatabase", 1000000)
-    db.transaction(function (tx) {
-     tx.executeSql("INSERT INTO notes (title, description)
-     VALUES(?,?);", [title, description]);
-    });
+    function loadNote(title, description) {
+        noteTitle = title;
+        noteDescription = description;
+    }
+
+    function updateNote(title, description) {
+        var db = LocalStorage.openDatabaseSync("notesDB", "1.0", "NotesDatabase", 1000000)
+        db.transaction(function(tx) {
+            tx.executeSql("UPDATE notes SET title = ?, description = ? WHERE title = ?", [title, description, noteTitle]);
+        });
     }
 }

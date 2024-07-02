@@ -66,21 +66,42 @@ Page {
                                 text: model.title
                                 font.pixelSize: Theme.fontSizeLarge
                                 elide: Label.ElideRight
+                               horizontalAlignment: Text.AlignLeft
+                               width: parent.width*0.6
                             }
                             Label {
                                 text: model.description
                                 font.pixelSize: Theme.fontSizeSmall
                                 elide: Label.ElideRight
+                               horizontalAlignment: Text.AlignLeft
+                               width: parent.width
                             }
 
                         }
+                        MouseArea {
+                               anchors.fill: parent
+                               onClicked: {
+                                   var viewNotePage = pageStack.push(Qt.resolvedUrl("ViewNotePage.qml"));
+                                   viewNotePage.loadNote(model.title, model.description);
+                               }
+                               onPressAndHold: {
+                                   var editNotePage = pageStack.push(Qt.resolvedUrl("EditNotePage.qml"));
+                                   editNotePage.loadNote(model.title, model.description);
+                                   editNotePage.noteUpdated.connect(selectNotes);
+                               }
+                           }
+
                         Button {
                          id: btnDelete
-                         text: "Delete"
-                         onClicked:{ deleteNote(model.title);
-                                     selectNotes();
-                                    }
+                         text: "Edit"
+                         onClicked: {
+                             var editNotePage = pageStack.push(Qt.resolvedUrl("EditNotePage.qml"));
+                             editNotePage.loadNote(model.title, model.description);
+                             editNotePage.noteUpdated.connect(selectNotes); // Подключение сигнала к функции обновления
+                         }
                          anchors.right: parent.right
+                         width:parent.width*0.3
+                         height: Theme.fontSizeLarge
                          }
                     }
 

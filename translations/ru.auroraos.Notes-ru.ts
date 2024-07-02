@@ -40,6 +40,39 @@
     </message>
 </context>
 <context>
+    <name>EditNotePage</name>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="16"/>
+        <source>Edit Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="31"/>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="40"/>
+        <source>Enter note title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="44"/>
+        <source>Description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="54"/>
+        <source>Enter note description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/EditNotePage.qml" line="66"/>
+        <source>Save Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainPage</name>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="14"/>
@@ -82,6 +115,24 @@
     <message>
         <location filename="../qml/pages/NewNotePage.qml" line="61"/>
         <source>Save Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ViewNotePage</name>
+    <message>
+        <location filename="../qml/pages/ViewNotePage.qml" line="13"/>
+        <source>View Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ViewNotePage.qml" line="22"/>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ViewNotePage.qml" line="34"/>
+        <source>Description</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
