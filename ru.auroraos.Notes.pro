@@ -11,6 +11,9 @@ SOURCES += \
 HEADERS += \
 
 DISTFILES += \
+    AUTHORS.md \
+    LICENSE.BSD-3-Clause.md \
+    README.md \
     qml/pages/NewNotePage.qml \
     rpm/ru.auroraos.Notes.spec \
 
