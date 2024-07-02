@@ -107,8 +107,6 @@ Page {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.5
             anchors.topMargin: 20
-
-            // Изменение цвета текста
             color: "white"
         }
 

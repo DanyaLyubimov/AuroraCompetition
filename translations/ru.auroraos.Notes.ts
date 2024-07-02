@@ -93,27 +93,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="28"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="27"/>
         <source>Title</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="36"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="44"/>
         <source>Enter note title</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="40"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="48"/>
         <source>Description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="49"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="57"/>
         <source>Enter note description</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/NewNotePage.qml" line="61"/>
+        <location filename="../qml/pages/NewNotePage.qml" line="69"/>
         <source>Save Note</source>
         <translation type="unfinished"></translation>
     </message>
@@ -121,18 +121,23 @@
 <context>
     <name>ViewNotePage</name>
     <message>
-        <location filename="../qml/pages/ViewNotePage.qml" line="13"/>
+        <location filename="../qml/pages/ViewNotePage.qml" line="14"/>
         <source>View Note</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ViewNotePage.qml" line="22"/>
+        <location filename="../qml/pages/ViewNotePage.qml" line="43"/>
         <source>Title</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/ViewNotePage.qml" line="34"/>
+        <location filename="../qml/pages/ViewNotePage.qml" line="79"/>
         <source>Description</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/ViewNotePage.qml" line="105"/>
+        <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

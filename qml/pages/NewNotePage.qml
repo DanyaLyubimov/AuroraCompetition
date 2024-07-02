@@ -16,7 +16,6 @@ Page {
     Column {
         id: formContainer
         anchors {
-            top: pageHeader.bottom
             left: parent.left
             right: parent.right
             bottom: parent.bottom

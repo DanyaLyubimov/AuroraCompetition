@@ -28,7 +28,6 @@ Page {
         text: qsTr("My Notes")
         font.pixelSize: Theme.fontSizeExtraLarge
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: notesListView.top
         anchors.bottomMargin:30
         horizontalAlignment: Text.AlignHCenter
     }
